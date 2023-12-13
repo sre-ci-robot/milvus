@@ -1,0 +1,10 @@
+runners:
+  - name: "azure-runner"
+    # Cloud Provider: Azure
+    cloud: "azure"
+    preemptible: true
+    region: "westus3"
+    instance_type: "Standard_D2s_v5"
+    machine_image: "canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest"
+    labels:
+      - "cirun-azure-runner"
